@@ -5,8 +5,8 @@
   syntax on
 
 " default color scheme
-  set background=dark
-  color twilight2
+  set t_Co=256
+  colorscheme vibrantink
 
 " don't wrap long lines
   set nowrap
@@ -104,3 +104,6 @@
 
 " Thorfile, Rakefile, Vagrantfile, and Gemfile are Ruby
   au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
+
+" Go beyond cmd-T's default 10000 file limit
+  let g:CommandTMaxFiles=80085
